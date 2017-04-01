@@ -161,13 +161,12 @@ header {
     color: white;
     .header-content {
         position: relative;
-        text-align: center;
+        text-align: left;
         padding: 100px 15px 100px;
         width: 100%;
         .header-content-inner {
             h1 {
-                font-weight: 700;
-                text-transform: uppercase;
+                font-weight: 500;
                 margin-top: 0;
                 margin-bottom: 0;
             }
@@ -180,6 +179,9 @@ header {
                 font-size: 16px;
                 margin-bottom: 50px;
             }
+        }
+        .fa {
+            display: block;
         }
     }
     @media (min-width: 768px) {
