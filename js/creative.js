@@ -38,9 +38,19 @@
     // Offset for Main Navigation
     $('#mainNav').affix({
         offset: {
-            top: 100
+            top: 10
         }
     })
+
+    // Scroll to pull me down image hides on scroll
+    $(window).bind('scroll', function() {
+        if ($(window).scrollTop() > 10) {
+            $('#scroll-image').hide();
+        }
+        else {
+            $('#scroll-image').show();
+        }
+    });
 
     // Initialize WOW.js Scrolling Animations
     new WOW().init();
