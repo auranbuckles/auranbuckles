@@ -1,0 +1,18 @@
+/** Tablet **/
+
+@media only all and (max-device-width: 1200px) {
+  .navbar-header {
+    width: 100%;
+  }
+  #balloon-clouds {
+    display: none;
+  }
+}
+
+/** Mobile **/
+
+@media only all and (max-device-width: 750px) {
+  header .header-content .header-content-inner {
+    top: 120px;
+  }
+}
