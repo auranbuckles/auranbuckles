@@ -14,3 +14,6 @@ markdown: kramdown
 exclude:
   - "bower_components"
   - "bower.json"
+
+# require jekyll-sitemap after other gems if want sitemap to include generated content
+plugins: [github-pages, jekyll-paginate, jekyll-feed, jekyll-compose, jekyll-sitemap]
