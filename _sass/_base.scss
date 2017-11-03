@@ -367,6 +367,9 @@ section#skills {
       padding: 20px 10px;
       text-align: center;
       color: $theme-grey;
+      p {
+        font-size: 16px;
+      }
     }
   }
 }

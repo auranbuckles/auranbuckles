@@ -29,6 +29,9 @@
       display: none;
     }
   }
+  section {
+    padding: 25px;
+  }
   #portfolio {
     .project {
       padding: 10px 20px;
@@ -41,5 +44,10 @@
 @media only all and (max-device-width: 750px) {
   #header {
     height: 560px;
+  }
+  #portfolio {
+    .portfolio-container {
+      padding: 0;
+    }
   }
 }
