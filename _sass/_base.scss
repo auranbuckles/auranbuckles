@@ -75,7 +75,7 @@ aside {
     padding-right: 0;
 }
 
-// Navigation
+//// Navigation
 
 .navbar-default {
     background-color: white;
@@ -156,77 +156,77 @@ aside {
     }
 }
 
-// Homepage Header
+//// Homepage Header
 
 header {
+  position: relative;
+  width: 100%;
+  min-height: auto;
+  @include background-cover;
+  background-position: center;
+  background-color: $theme-dark;
+  .header-content {
     position: relative;
+    text-align: left;
     width: 100%;
-    min-height: auto;
-    @include background-cover;
-    background-position: center;
-    background-color: $theme-dark;
+    .header-content-inner {
+      top: 200px;
+      left: 10%;
+      h1 {
+        margin-left: 10px;
+        padding: 5px;
+        font-weight: 700;
+        font-size: 60px !important;
+      }
+      hr {
+        margin: 30px auto;
+      }
+      p {
+        font-weight: 400;
+        font-size: 16px;
+      }
+    }
+    .fa {
+      display: block;
+    }
+  }
+  #balloon {
+    display: block;
+    margin: 0 auto 10px auto;
+  }
+  #scroll-image {
+    position: absolute;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+  }
+  @media (min-width: 768px) {
+    min-height: 100%;
     .header-content {
-        position: relative;
-        text-align: left;
-        width: 100%;
-        .header-content-inner {
-            top: 200px;
-            left: 10%;
-            h1 {
-                padding: 5px;
-                font-weight: 700;
-                font-size: 60px !important;
-            }
-            hr {
-                margin: 30px auto;
-            }
-            p {
-                font-weight: 400;
-                font-size: 16px;
-            }
+      position: absolute;
+      top: 33%;
+      -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+      transform: translateY(-50%);
+      padding: 0 50px;
+      .header-content-inner {
+        max-width: 1000px;
+        margin-left: auto;
+        margin-right: auto;
+        h1 {
+          margin: 0;
         }
-        .fa {
-            display: block;
+        p {
+          font-size: 18px;
+          max-width: 80%;
+          margin: 0;
         }
+      }
     }
-
-    #balloon {
-        display: block;
-        margin: 0 auto 10px auto;
-    }
-    #scroll-image {
-        position: absolute;
-        margin: 0 auto;
-        left: 0;
-        right: 0;
-    }
-    @media (min-width: 768px) {
-        min-height: 100%;
-        .header-content {
-            position: absolute;
-            top: 33%;
-            -webkit-transform: translateY(-50%);
-            -ms-transform: translateY(-50%);
-            transform: translateY(-50%);
-            padding: 0 50px;
-            .header-content-inner {
-                max-width: 1000px;
-                margin-left: auto;
-                margin-right: auto;
-                h1 {
-                    margin: 0;
-                }
-                p {
-                    font-size: 18px;
-                    max-width: 80%;
-                    margin: 0;
-                }
-            }
-        }
-    }
+  }
 }
 
-// Monokai Code Color Scheme
+/// Monokai Code Color Scheme
 
 .comment {
     color: $theme-grey;
@@ -256,19 +256,6 @@ header {
     color: $lavender;
 }
 
-//// Clouds Animation
-
-.cloud1 {
-    position: absolute;
-    top: 120px;
-    -webkit-animation: movingCloud1 18s infinite; /* Safari 4.0 - 8.0 */
-    -webkit-animation-direction: alternate; /* Safari 4.0 - 8.0 */
-    animation: movingCloud1 18s infinite;
-    animation-direction: alternate;
-    -webkit-animation-delay: 1s; /* Safari 4.0 - 8.0 */
-    animation-delay: 1s;
-}
-
 /// Social Media Icons
 .white-icons {
   .fa-stack {
@@ -280,6 +267,19 @@ header {
   .fa-stack-1x {
     color: $theme-dark;
   }
+}
+
+/// Clouds Animation
+
+.cloud1 {
+    position: absolute;
+    top: 120px;
+    -webkit-animation: movingCloud1 18s infinite; /* Safari 4.0 - 8.0 */
+    -webkit-animation-direction: alternate; /* Safari 4.0 - 8.0 */
+    animation: movingCloud1 18s infinite;
+    animation-direction: alternate;
+    -webkit-animation-delay: 1s; /* Safari 4.0 - 8.0 */
+    animation-delay: 1s;
 }
 
 // Safari 4.0 - 8.0
@@ -316,47 +316,40 @@ header {
     100% {right: 5%; top: 1px;}
 }
 
-// Sections
+//// Sections Universal
 
 section {
-    // height: 100%;
-    padding: 50px;
-    position: relative;
+  // height: 100%;
+  padding: 50px;
+  position: relative;
 }
 
 .section-heading {
-    margin-top: 0;
+  margin-top: 0;
 }
 
-.skills-box {
-    padding: 0;
-}
-
-.legal-box, .tech-box {
-    // height: 100vh;
-    padding: 20px;
-}
-
-.legal-box {
-    background-color: $theme-light;
-}
+/// Skills
 
 // .tech-box {
 section#skills {
-    background-color: $theme-dark;
-    word-spacing: 5px;
+  background-color: $theme-dark;
+  word-spacing: 5px;
 }
 
-.service-box {
-    max-width: 400px;
-    margin: 50px auto 0;
-    @media (min-width: 992px) {
-        margin: 20px auto 0;
-    }
-    p {
-        margin-bottom: 40px;
-    }
+.skills-box {
+  padding: 0;
 }
+
+.legal-box, .tech-box {
+  // height: 100vh;
+  padding: 20px;
+}
+
+.legal-box {
+  background-color: $theme-light;
+}
+
+/// Portfolio
 
 .portfolio-container {
   padding: 0 40px;
@@ -381,7 +374,6 @@ section#skills {
   .portfolio-box-caption {
     border-radius: 8px;
     color: white;
-    // opacity: 0;
     display: block;
     position: absolute;
     bottom: 0;
@@ -413,38 +405,39 @@ section#skills {
       }
     }
   }
-// &:hover {
-//   .portfolio-box-caption {
-//     opacity: 1;
-//   }
-// }
 }
 
+// CharityBlend
 #project-1 {
   .portfolio-box-caption {
     background: rgba( $theme-primary, .9 );
   }
 }
+// JPilgrim
 #project-2 {
   .portfolio-box-caption {
     background: rgba( $pumpkin, .9 );
   }
 }
+// World Recipes
 #project-3 {
   .portfolio-box-caption {
     background: rgba( $orchid, .9 );
   }
 }
+// Oovart's
 #project-4 {
   .portfolio-box-caption {
     background: rgba( $lavender, .9 );
   }
 }
+// Zookeeper
 #project-5 {
   .portfolio-box-caption {
     background: rgba( $water, .9 );
   }
 }
+// Tokyo CLI
 #project-6 {
   .portfolio-box-caption {
     background: rgba( $theme-grey, .9 );
@@ -553,8 +546,6 @@ img::-moz-selection {
 body {
     -webkit-tap-highlight-color: $theme-dark;
 }
-
-
 
 div#scrollmagic {
     height: 100%;
