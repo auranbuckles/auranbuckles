@@ -1,18 +1,40 @@
 /** Tablet **/
 
 @media only all and (max-device-width: 1200px) {
-  .navbar-header {
-    width: 100%;
+  .navbar-default .navbar-collapse {
+    * {
+      display: inline;
+    }
+    ul.nav.navbar-nav {
+      margin-top: 15px;
+    }
   }
-  #balloon-clouds {
-    display: none;
+  #header {
+    min-height: 0;
+    height: 780px;
+    #title-container {
+      top: 130px;
+    }
+    .white-icons {
+      display: none;
+    }
+    .white-icons.mobile-only {
+      position: absolute;
+      width: 100%;
+      bottom: 30px;
+      display: block;
+      text-align: center;
+    }
+    #balloon-clouds {
+      display: none;
+    }
   }
 }
 
 /** Mobile **/
 
 @media only all and (max-device-width: 750px) {
-  header .header-content .header-content-inner {
-    top: 120px;
+  #header {
+    height: 560px;
   }
 }
