@@ -33,7 +33,8 @@ h3,
 h4,
 h5,
 h6 {
-    @include sans-serif-font;
+  color: black;
+  @include sans-serif-font;
 }
 
 p {
@@ -70,7 +71,8 @@ aside {
 }
 
 .no-padding {
-    padding: 0;
+    padding-left: 0;
+    padding-right: 0;
 }
 
 // Navigation
@@ -227,7 +229,7 @@ header {
 // Monokai Code Color Scheme
 
 .comment {
-    color: #75715E;
+    color: $theme-grey;
 }
 
 .offwhite {
@@ -239,19 +241,19 @@ header {
 }
 
 .water {
-    color: #66D9EF;
+    color: $water;
 }
 
 .grass {
-    color: #A6E22E;
+    color: $grass;
 }
 
 .pumpkin {
-    color: #FD971F;
+    color: $pumpkin;
 }
 
 .lavender {
-    color: #AE81FF;
+    color: $lavender;
 }
 
 //// Clouds Animation
@@ -265,6 +267,19 @@ header {
     animation-direction: alternate;
     -webkit-animation-delay: 1s; /* Safari 4.0 - 8.0 */
     animation-delay: 1s;
+}
+
+/// Social Media Icons
+.white-icons {
+  .fa-stack {
+    color: $theme-grey;
+    &:hover {
+      color: $theme-light;
+    }
+  }
+  .fa-stack-1x {
+    color: $theme-dark;
+  }
 }
 
 // Safari 4.0 - 8.0
@@ -304,7 +319,8 @@ header {
 // Sections
 
 section {
-    height: 100%;
+    // height: 100%;
+    padding: 50px;
     position: relative;
 }
 
@@ -317,7 +333,7 @@ section {
 }
 
 .legal-box, .tech-box {
-    height: 100vh;
+    // height: 100vh;
     padding: 20px;
 }
 
@@ -325,7 +341,8 @@ section {
     background-color: $theme-light;
 }
 
-.tech-box {
+// .tech-box {
+section#skills {
     background-color: $theme-dark;
     word-spacing: 5px;
 }
@@ -341,63 +358,110 @@ section {
     }
 }
 
+.portfolio-container {
+  padding: 0 40px;
+}
+
+.project {
+  padding: 40px;
+  img.project-img {
+    border-radius: 8px;
+  }
+  img.project-logo {
+    margin-top: 15px;
+    height: 30px;
+  }
+}
+
 .portfolio-box {
-    position: relative;
+  position: relative;
+  display: block;
+  max-width: 650px;
+  margin: 0 auto;
+  .portfolio-box-caption {
+    border-radius: 8px;
+    color: white;
+    // opacity: 0;
     display: block;
-    max-width: 650px;
-    margin: 0 auto;
-    .portfolio-box-caption {
-        color: white;
-        opacity: 0;
-        display: block;
-        background: rgba( $theme-primary, .9 );
-        position: absolute;
-        bottom: 0;
-        text-align: center;
-        width: 100%;
-        height: 100%;
-        @include transition-all;
-        .portfolio-box-caption-content {
-            width: 100%;
-            text-align: center;
-            position: absolute;
-            top: 50%;
-            transform: translateY(-50%);
-            .project-category,
-            .project-name {
-                @include sans-serif-font;
-                padding: 0 15px;
-            }
-            .project-category {
-                text-transform: uppercase;
-                font-weight: 600;
-                font-size: 14px;
-            }
-            .project-name {
-                font-size: 18px;
-            }
-            .project-description {
-                padding: 0 30px;
-            }
-        }
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    @include transition-all;
+    .portfolio-box-caption-content {
+      width: 100%;
+      text-align: center;
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      .project-category,
+      .project-name {
+        @include sans-serif-font;
+        padding: 0 15px;
+      }
+      .project-category {
+        text-transform: uppercase;
+        font-weight: 600;
+        font-size: 14px;
+      }
+      .project-name {
+        font-size: 18px;
+      }
+      .project-description {
+        padding: 0 30px;
+      }
     }
-    &:hover {
-        .portfolio-box-caption {
-            opacity: 1;
-        }
+  }
+// &:hover {
+//   .portfolio-box-caption {
+//     opacity: 1;
+//   }
+// }
+}
+
+#project-1 {
+  .portfolio-box-caption {
+    background: rgba( $theme-primary, .9 );
+  }
+}
+#project-2 {
+  .portfolio-box-caption {
+    background: rgba( $pumpkin, .9 );
+  }
+}
+#project-3 {
+  .portfolio-box-caption {
+    background: rgba( $orchid, .9 );
+  }
+}
+#project-4 {
+  .portfolio-box-caption {
+    background: rgba( $lavender, .9 );
+  }
+}
+#project-5 {
+  .portfolio-box-caption {
+    background: rgba( $water, .9 );
+  }
+}
+#project-6 {
+  .portfolio-box-caption {
+    background: rgba( $theme-grey, .9 );
+  }
+}
+
+@media (min-width: 768px) {
+  .portfolio-box-caption {
+    .portfolio-box-caption-content {
+      .project-category {
+        font-size: 16px;
+      }
+      .project-name {
+        font-size: 22px;
+      }
     }
-    @media (min-width: 768px) {
-        .portfolio-box-caption {
-            .portfolio-box-caption-content {
-                .project-category {
-                    font-size: 16px;
-                }
-                .project-name {
-                    font-size: 22px;
-                }
-            }
-        }
-    }
+  }
 }
 
 .call-to-action {
@@ -409,7 +473,7 @@ section {
 // Images
 
 div.image-container {
-    height: 100vh;  
+    height: 100vh;
     vertical-align: bottom;
     display: table-cell;
 }
@@ -523,10 +587,10 @@ section.scrollmagic {
 section#one { background-color: white; color: black; }
 section#two { background-color: darken($water, 10%); }
 section#three { background-color: lighten($water, 5%); }
-section#four { 
-  background-color:  darken($water, 10%);  
+section#four {
+  background-color:  darken($water, 10%);
   transition: all 0.4s linear;
   &.is-active {
     background-color: #222222;
-  } 
+  }
 }
