@@ -354,18 +354,20 @@ section#skills {
 
 /// Portfolio
 
-.portfolio-container {
-  padding: 0 40px;
-}
-
-.project {
-  padding: 40px;
-  img.project-img {
-    border-radius: 8px;
+#portfolio {
+  .portfolio-container {
+    padding: 0 8%;
   }
-  img.project-logo {
-    margin-top: 15px;
-    height: 30px;
+  .project {
+    padding: 10px 40px;
+    img.project-img {
+      border-radius: 8px;
+    }
+    .project-description {
+      padding: 20px 10px;
+      text-align: center;
+      color: $theme-grey;
+    }
   }
 }
 
@@ -401,10 +403,8 @@ section#skills {
         font-size: 14px;
       }
       .project-name {
-        font-size: 18px;
-      }
-      .project-description {
-        padding: 0 30px;
+        font-size: 1.7em;
+        font-weight: 600;
       }
     }
   }
@@ -415,29 +415,35 @@ section#skills {
   .portfolio-box-caption {
     background: rgba( $theme-primary, .9 );
   }
+  img.project-logo {
+    width: 70%;
+  }
 }
 // JPilgrim
 #project-2 {
   .portfolio-box-caption {
-    background: rgba( $pumpkin, .9 );
+    background: rgba( $pumpkin-dark, .9 );
+  }
+  img.project-logo {
+    width: 55%;
   }
 }
 // World Recipes
 #project-3 {
   .portfolio-box-caption {
-    background: rgba( $orchid, .9 );
+    background: rgba( $orchid-dark, .9 );
   }
 }
 // Oovart's
 #project-4 {
   .portfolio-box-caption {
-    background: rgba( $lavender, .9 );
+    background: rgba( $lavender-dark, .9 );
   }
 }
 // Zookeeper
 #project-5 {
   .portfolio-box-caption {
-    background: rgba( $water, .9 );
+    background: rgba( $water-dark, .9 );
   }
 }
 // Tokyo CLI
