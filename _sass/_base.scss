@@ -78,8 +78,6 @@ aside {
 //// Navigation
 
 .navbar-default {
-    background-color: white;
-    border-color: rgba($theme-dark, .5);
     border: none;
     @include sans-serif-font;
     @include transition-all;
@@ -135,23 +133,23 @@ aside {
             }
         }
         &.affix {
-            background-color: white;
-            border-color: rgba($theme-dark, .5);
-            .navbar-header .navbar-brand {
-                color: $theme-primary;
-                font-size: 14px;
-                &:hover,
-                &:focus {
-                    color: darken($theme-primary, 10%);
-                }
-            }
-            .nav > li > a,
-            .nav > li > a:focus {
-                color: $theme-dark;
-                &:hover {
-                    color: $theme-primary;
-                }
-            }
+          background-color: rgba(255, 255, 255, .5);
+          border-bottom: 1px solid rgba($theme-dark, .2);
+          .navbar-header .navbar-brand {
+              color: $theme-primary;
+              font-size: 14px;
+              &:hover,
+              &:focus {
+                  color: darken($theme-primary, 10%);
+              }
+          }
+          .nav > li > a,
+          .nav > li > a:focus {
+              color: $theme-dark;
+              &:hover {
+                  color: $theme-primary;
+              }
+          }
         }
     }
 }
