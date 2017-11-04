@@ -2,7 +2,7 @@
 
 @media only all and (max-device-width: 1200px) {
   .navbar-default .navbar-collapse {
-    * {
+    .navbar-header, ul.nav.navbar-nav {
       display: inline;
     }
     ul.nav.navbar-nav {
