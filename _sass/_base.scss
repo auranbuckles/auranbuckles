@@ -362,6 +362,12 @@ section#skills {
   }
   .project {
     padding: 10px 40px;
+    span {
+      display: block;
+      opacity: 0.7;
+      font-size: 0.6em;
+      font-weight: normal;
+    }
     img.project-img {
       border-radius: 8px;
     }
@@ -418,10 +424,7 @@ section#skills {
 // CharityBlend
 #project-1 {
   .portfolio-box-caption {
-    background: rgba( $theme-primary, .9 );
-  }
-  img.project-logo {
-    width: 70%;
+    background: rgba( $water-dark, .9 );
   }
 }
 // JPilgrim
@@ -430,31 +433,34 @@ section#skills {
     background: rgba( $pumpkin-dark, .9 );
   }
   img.project-logo {
-    width: 55%;
+    width: 70%;
   }
 }
 // World Recipes
 #project-3 {
   .portfolio-box-caption {
-    background: rgba( $orchid-dark, .9 );
+    background: rgba( $theme-primary, .9 );
+  }
+  img.project-logo {
+    width: 55%;
   }
 }
 // Oovart's
 #project-4 {
   .portfolio-box-caption {
-    background: rgba( $lavender-dark, .9 );
+    background: rgba( $orchid-dark, .9 );
   }
 }
 // Zookeeper
 #project-5 {
   .portfolio-box-caption {
-    background: rgba( $water-dark, .9 );
+    background: rgba( $theme-grey, .9 );
   }
 }
 // Tokyo CLI
 #project-6 {
   .portfolio-box-caption {
-    background: rgba( $theme-grey, .9 );
+    background: rgba( $lavender-dark, .9 );
   }
 }
 
