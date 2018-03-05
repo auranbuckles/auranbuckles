@@ -19,12 +19,12 @@ hr.light {
 }
 
 a {
-    @include transition-all;
-    color: $theme-primary;
-    &:hover,
-    &:focus {
-        color: darken($theme-primary, 10%);
-    }
+  @include transition-all;
+  color: $theme-primary;
+  &:hover,
+  &:focus {
+    color: darken($theme-primary, 10%);
+  }
 }
 
 h1,
@@ -38,41 +38,52 @@ h6 {
 }
 
 p {
-    font-size: 14px;
-    line-height: 1.5;
-    margin-bottom: 20px;
+  font-size: 14px;
+  line-height: 1.5;
+  margin-bottom: 20px;
 }
 
 .bg-primary {
-    background-color: white;
+  background-color: white;
 }
 
 .bg-dark {
-    background-color: $theme-dark;
+  background-color: $theme-dark;
+  color: white;
+  a {
     color: white;
+  }
+  a:hover {
+    color: $theme-grey;
+    text-decoration: none;
+  }
 }
 
 .text-faded {
-    color: $theme-dark;
-    font-size: 16px;
+  color: $theme-dark;
+  font-size: 16px;
 }
 
 .text-faded a {
-    color: $grass;
+  color: $grass;
 }
 
 .text-faded a:hover {
-    text-decoration: none;
-    border-bottom: 1px dotted $grass;
+  text-decoration: none;
+  border-bottom: 1px dotted $grass;
+}
+
+.text-muted {
+  color: $theme-grey;
 }
 
 aside {
-    padding: 50px 0;
+  padding: 50px 0;
 }
 
 .no-padding {
-    padding-left: 0;
-    padding-right: 0;
+  padding-left: 0;
+  padding-right: 0;
 }
 
 //// Navigation
@@ -162,7 +173,6 @@ header {
   min-height: auto;
   @include background-cover;
   background-position: center;
-  background-color: $theme-dark;
   .header-content {
     position: relative;
     text-align: left;
@@ -421,46 +431,55 @@ section#skills {
   }
 }
 
-// CharityBlend
+// Sockchain
 #project-1 {
   .portfolio-box-caption {
-    background: rgba( $water-dark, .9 );
+    background: rgba( $sockchain, .9 );
   }
 }
-// JPilgrim
+// CharityBlend
 #project-2 {
   .portfolio-box-caption {
-    background: rgba( $pumpkin-dark, .9 );
+    background: rgba( $charityblend, .9 );
   }
   img.project-logo {
     width: 70%;
   }
 }
-// World Recipes
+// EqualOpen
 #project-3 {
   .portfolio-box-caption {
-    background: rgba( $theme-primary, .9 );
+    background: rgba( $equalopen, .9 );
+  }
+}
+// JPilgrim
+#project-4 {
+  .portfolio-box-caption {
+    background: rgba( $jpilgrim, .9 );
   }
   img.project-logo {
     width: 55%;
   }
 }
-// Oovart's
-#project-4 {
-  .portfolio-box-caption {
-    background: rgba( $orchid-dark, .9 );
-  }
-}
-// Zookeeper
+// World Recipes
 #project-5 {
   .portfolio-box-caption {
-    background: rgba( $theme-grey, .9 );
+    background: rgba( $world-recipes, .9 );
   }
 }
 // Tokyo CLI
 #project-6 {
   .portfolio-box-caption {
-    background: rgba( $lavender-dark, .9 );
+    background: rgba( $theme-grey, .9 );
+  }
+}
+
+footer {
+  i.fa-file-text-o {
+    font-size: 1.8em;
+  }
+  p {
+    margin-bottom: 40px;
   }
 }
 

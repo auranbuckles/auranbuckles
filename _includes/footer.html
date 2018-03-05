@@ -1,10 +1,20 @@
 <!-- Footer -->
-<section>
+<section class="bg-dark">
   <footer>
     <div class="container">
       <div class="row">
         <div class="col-xs-12 text-center">
-          {% include social_media.html %}
+          <a href="{{ site.url }}/downloads/resume.pdf" target="_blank">
+            <i class="fa fa-file-text-o" aria-hidden="true"></i>
+            <p>Resume</p>
+          </a>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xs-12 text-center">
+          <div class="white-icons">
+            {% include social_media.html %}
+          </div>
           <p class="copyright text-muted text-center">Copyright &copy; {{ site.time | date: '%Y' }}</p>
         </div>
       </div>
