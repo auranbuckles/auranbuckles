@@ -33,7 +33,15 @@
     padding: 25px;
     padding-top: 60px;
   }
+  #skills {
+    .skills-container {
+      padding: 0 8%;
+    }
+  }
   #portfolio {
+    .portfolio-container {
+      padding: 0 5%;
+    }
     .project {
       padding: 10px 20px;
     }
