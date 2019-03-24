@@ -452,6 +452,9 @@ section#portfolio {
 }
 // CharityBlend
 #project-2 {
+  .portfolio-box {
+    order: 2;
+  }
   .portfolio-box-caption {
     background: rgba( $charityblend, .9 );
   }
