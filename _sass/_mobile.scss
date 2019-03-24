@@ -15,8 +15,17 @@
   #header {
     min-height: 0;
     height: 780px;
+    #balloon-clouds {
+      height: 200px;
+      img {
+        max-height: 100%;
+      }
+    }
     .header-content-inner {
-      margin-top: 25%;
+      margin-top: 35%;
+      h1 {
+        font-size: 50px !important;
+      }
     }
     .white-icons {
       display: none;
@@ -27,9 +36,6 @@
       bottom: 30px;
       display: block;
       text-align: center;
-    }
-    #balloon-clouds {
-      display: none;
     }
   }
   section {
@@ -55,17 +61,24 @@
   }
 }
 
+/** tablets that are not iPad Pro **/
+// @media only all and (max-device-width: 1020px) {
+//   #header #balloon-clouds {
+//     display: none;
+//   }
+// }
+
 /** Mobile **/
 
-@media only all and (max-device-width: 750px) {
+@media only all and (max-device-width: 760px) {
   #header {
     height: 560px;
     .header-content-inner {
-      margin-top: 0;
+      margin-top: 20px;
       margin-left: 0;
-      h1 {
-        font-size: 50px !important;
-      }
+    }
+    #balloon-clouds {
+      display: none;
     }
   }
   section#about, section#skills, section#portfolio {
@@ -79,6 +92,9 @@
     }
     .container-right {
       padding: 0;
+    }
+    img#profile {
+      height: 175px;
     }
   }
   section#skills {
