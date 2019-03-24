@@ -8,12 +8,15 @@
     ul.nav.navbar-nav {
       margin-top: 15px;
     }
+    .nav {
+      margin: 0 10px;
+    }
   }
   #header {
     min-height: 0;
     height: 780px;
-    #title-container {
-      top: 130px;
+    .header-content-inner {
+      margin-top: 25%;
     }
     .white-icons {
       display: none;
@@ -30,15 +33,19 @@
     }
   }
   section {
-    padding: 25px;
-    padding-top: 60px;
+    padding: 60px 25px;
   }
-  #skills {
+  section#about {
+    .image-container {
+      margin-bottom: 25px;
+    }
+  }
+  section#skills {
     .skills-container {
       padding: 0 8%;
     }
   }
-  #portfolio {
+  section#portfolio {
     .portfolio-container {
       padding: 0 5%;
     }
@@ -53,10 +60,46 @@
 @media only all and (max-device-width: 750px) {
   #header {
     height: 560px;
+    .header-content-inner {
+      margin-top: 0;
+      margin-left: 0;
+      h1 {
+        font-size: 50px !important;
+      }
+    }
   }
-  #portfolio {
+  section#about, section#skills, section#portfolio {
+    p {
+      font-size: 17px;
+    }
+  }
+  section#about {
+    .about-container {
+      padding: 0;
+    }
+    .container-right {
+      padding: 0;
+    }
+  }
+  section#skills {
+    .skills-container {
+      padding: 0;
+    }
+    p.skills-description {
+      font-weight: bold;
+    }
+  }
+  section#portfolio {
     .portfolio-container {
       padding: 0;
+    }
+    .project {
+      flex-direction: column;
+    }
+    #project-2 {
+      .portfolio-box {
+        order: unset;
+      }
     }
   }
 }
