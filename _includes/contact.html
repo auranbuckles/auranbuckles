@@ -1,25 +1,23 @@
 <section id="contact">
   <div class="container">
     <div class="row">
-      <div class="col-lg-8 col-lg-offset-2 text-center">
-        <h2 class="section-heading">Let's Get In Touch!</h2>
+      <div class="col-xs-12 text-center">
+        <h2 class="section-heading">Contact</h2>
         <hr class="primary">
-        <p>Send me an email and I will get back to you as soon as possible.</p>
       </div>
-    <div class="col-lg-2 col-lg-offset-2 text-center">
-      <a href="https://linkedin.com/in/{{ site.linkedin_username }}">
-        <i class="fa fa-linkedin-square fa-3x wow bounceIn" data-wow-delay=".1s"></i>
-      </a>
     </div>
-    <div class="col-lg-2 col-lg-offset-1 text-center">
-      <a href="mailto:{{ site.email }}">
-      <i class="fa fa-envelope-o fa-3x wow bounceIn" data-wow-delay=".1s"></i>
-      </a>
-    </div>
-    <div class="col-lg-2 col-lg-offset-1 text-center">
-      <a href="https://github.com/{{ site.github_username }}">
-      <i class="fa fa-github fa-3x wow bounceIn" data-wow-delay=".1s"></i>
-      </a>
+    <div class="row">
+      <div class="col-xs-12 col-sm-8 col-sm-offset-2 col-md-4 col-md-offset-4 text-center">
+        <form method="POST" action="https://formspree.io/a@auranbuckles.com">
+          <div class="form-group">
+            <input class="form-control" type="email" name="email" placeholder="Your email">
+          </div>
+          <div class="form-group">
+            <textarea class="form-control" name="message" placeholder="Your message" rows="8"></textarea>
+          </div>
+          <button class="btn btn-default pull-right" type="submit">Send</button>
+        </form>
+      </div>
     </div>
   </div>
 </section>
