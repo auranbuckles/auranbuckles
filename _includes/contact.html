@@ -1,23 +1,14 @@
 <section id="contact">
-  <div class="container">
-    <div class="row">
-      <div class="col-xs-12 text-center">
-        <h2 class="section-heading">Contact</h2>
-        <hr class="primary">
+  <h2>Contact</h2>
+  <div id="contact-form">
+    <form method="POST" action="https://formspree.io/a@auranbuckles.com">
+      <div class="form-group">
+        <input class="form-control" type="email" name="email" placeholder="Your email">
       </div>
-    </div>
-    <div class="row">
-      <div class="col-xs-12 col-sm-8 col-sm-offset-2 col-md-4 col-md-offset-4 text-center">
-        <form method="POST" action="https://formspree.io/a@auranbuckles.com">
-          <div class="form-group">
-            <input class="form-control" type="email" name="email" placeholder="Your email">
-          </div>
-          <div class="form-group">
-            <textarea class="form-control" name="message" placeholder="Your message" rows="8"></textarea>
-          </div>
-          <button class="btn btn-default pull-right" type="submit">Send</button>
-        </form>
+      <div class="form-group">
+        <textarea class="form-control" name="message" placeholder="Your message" rows="8"></textarea>
       </div>
-    </div>
+      <button class="btn btn-default pull-right" type="submit">Send</button>
+    </form>
   </div>
 </section>

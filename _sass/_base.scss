@@ -508,11 +508,13 @@ section#blog {
 /// Footer
 
 footer {
+  text-align: center;
   i.fa-file-text-o {
     font-size: 1.8em;
   }
-  p {
-    margin-bottom: 40px;
+  .copyright {
+    margin-top: 20px;
+    font-size: 12px;
   }
 }
 
@@ -592,9 +594,16 @@ footer {
 }
 
 // Contact
-#contact .fa {
-    color: $theme-dark;
-    font-size: 4em;
+#contact {
+  h2 {
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 40px;
+  }
+  #contact-form {
+    margin: 0 auto;
+    max-width: 420px;
+  }
 }
 
 // Extras
