@@ -42,8 +42,8 @@
     padding: 60px 25px;
   }
   section#about {
-    .image-container {
-      margin-bottom: 25px;
+    #image-container, #introduction {
+      margin: 0 30px;
     }
   }
   section#skills {
@@ -88,10 +88,10 @@
   }
   section#about {
     .about-container {
-      padding: 0;
+      flex-direction: column;
     }
-    .container-right {
-      padding: 0;
+    #introduction {
+      margin: 0;
     }
     img#profile {
       height: 175px;
@@ -111,6 +111,8 @@
     }
     .project {
       flex-direction: column;
+      padding: 0;
+      margin-bottom: 20px;
     }
     #project-2 {
       .portfolio-box {
