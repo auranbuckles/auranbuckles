@@ -449,8 +449,7 @@ section#portfolio {
   }
 }
 
-// JPilgrim
-#project-1 {
+#jpilgrim {
   .portfolio-box-caption {
     background: rgba( $jpilgrim, .9 );
   }
@@ -458,11 +457,15 @@ section#portfolio {
     width: 55%;
   }
 }
-// CharityBlend
-#project-2 {
+#equalopen {
   .portfolio-box {
     order: 2;
   }
+  .portfolio-box-caption {
+    background: rgba( $equalopen, .9 );
+  }
+}
+#charityblend {
   .portfolio-box-caption {
     background: rgba( $charityblend, .9 );
   }
@@ -480,12 +483,6 @@ section#portfolio {
 #project-4 {
   .portfolio-box-caption {
     background: rgba( $sockchain, .9 );
-  }
-}
-// EqualOpen
-#project-5 {
-  .portfolio-box-caption {
-    background: rgba( $equalopen, .9 );
   }
 }
 // Tokyo CLI
