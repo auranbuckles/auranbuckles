@@ -81,8 +81,12 @@ p.no-margin {
   border-bottom: 1px dotted $theme-primary;
 }
 
-.text-muted {
+.text-muted, .text-subtitle {
   color: $theme-grey;
+}
+
+.text-subtitle {
+  font-size: 16px;
 }
 
 aside {
@@ -330,7 +334,7 @@ section#about {
   }
   #image-container, #introduction {
     text-align: center;
-    margin: 0 60px;
+    margin: 0 50px;
   }
   img#profile {
     margin-left: auto;
