@@ -1,12 +1,17 @@
+{% assign start_year = 2017 %}
+{% assign current_year = site.time | date: "%Y" | plus: 0 %}
+{% assign years_experience = current_year | minus: start_year %}
+
 <section id="about">
   <div class="about-container">
     <div id="image-container">
-      <img id="profile" src="img/about/profile.jpg" alt="profile picture">
+      <img id="profile" src="img/about/auran-2.jpg" alt="profile picture">
     </div>
     <div id="introduction">
-      <h2>Hi, I'm Auran.</h2>
-      <p class="text-subtitle">Full-Stack Ruby/Rails & JavaScript Engineer with 3+ years experience in web app development and database design.</p>
-      <p class="text-faded">During my pursuit of a legal career, I discovered my passion for programming and software development. From then I began my journey as a full-stack engineer, focusing on delivering robust codebases that streamline business processes, and maximize value to the end user. Currently, I work at <a href="https://www.carerev.com/" target="_blank">CareRev</a> and am actively involved in <a class="page-scroll" href="#portfolio">several projects</a> on the side.</p>
+      <h2>Hi, I’m Auran.</h2>
+      <p class="text-subtitle">Full-stack JavaScript & Ruby/Rails Engineer with {{ years_experience }} years experience in web app development and database architecture.</p>
+      <p class="text-faded">Building software lets me solve puzzles professionally. I specialize in spatial tech – canvas rendering, mapping technologies/interfaces, and clever latent space design for agentic AI.</p>
+      <p class="text-faded">Currently, I am working on a platform that solves the ‘last mile’ of design automation. On the side, I maintain a popular web app that digitally preserves pilgrimage culture and data. Previously, I built healthcare software at CareRev.</p>
     </div>
   </div>
 </section>

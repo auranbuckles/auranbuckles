@@ -1,11 +1,11 @@
+
 source "https://rubygems.org"
 
-group :jekyll_plugins do
-  gem "github-pages"
-  gem "jekyll-paginate"
-  gem "jekyll-feed"
-  gem "jekyll-compose"
-  gem "jekyll-sitemap"
-end
+ruby "3.0.2"
 
-gem "rubyzip"
+gem "jekyll", "~> 4.3"
+gem "jekyll-paginate", "~> 1.1"
+gem "jekyll-feed", "~> 0.16"
+gem "jekyll-sitemap", "~> 1.4"
+gem "jekyll-compose", "~> 0.12"
+gem "rubyzip", "~> 2.3"

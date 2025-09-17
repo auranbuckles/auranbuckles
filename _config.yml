@@ -16,4 +16,4 @@ exclude:
   - "bower.json"
 
 # require jekyll-sitemap after other gems if want sitemap to include generated content
-plugins: [github-pages, jekyll-paginate, jekyll-feed, jekyll-compose, jekyll-sitemap]
+plugins: [jekyll-paginate, jekyll-feed, jekyll-compose, jekyll-sitemap]
