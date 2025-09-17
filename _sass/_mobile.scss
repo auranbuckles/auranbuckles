@@ -97,6 +97,13 @@
     img#profile {
       height: 175px;
     }
+    .about-mentions {
+      .featured-media-box {
+        img {
+          margin-bottom: 8px;
+        }
+      }
+    }
   }
   section#skills {
     .skills-container {
@@ -120,6 +127,7 @@
       }
       .project-description {
         margin-left: 0;
+        text-align: center;
       }
     }
   }
