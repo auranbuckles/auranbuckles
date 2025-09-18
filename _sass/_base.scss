@@ -356,20 +356,13 @@ section#about {
   .about-mentions {
     margin: 28px auto 0;
     text-align: center;
-    .mentions-title {
-      font-size: 1.2em;
-      font-weight: 500;
-    }
     .featured-media-box {
       display: flex;
       justify-content: center;
       flex-wrap: wrap;
       img {
-        margin-right: 24px;
-        width: 54px;
-        height: 54px;
-        object-fit: contain;
-        border-radius: 99999px;
+        margin-right: 28px;
+        height: 30px;
       }
       img:last-child {
         margin-right: 0;
